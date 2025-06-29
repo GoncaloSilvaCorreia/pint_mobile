@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'rotas.dart';
+import 'Rotas/rotas.dart';
 
 void main() {
   runApp(const SoftinsaLoginApp());
