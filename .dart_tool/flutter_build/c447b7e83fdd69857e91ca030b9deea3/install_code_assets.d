@@ -1,1 +1,0 @@
- /Users/goncalocorreia/Documents/GitHub/pint_mobile/.dart_tool/flutter_build/c447b7e83fdd69857e91ca030b9deea3/native_assets.json: 
