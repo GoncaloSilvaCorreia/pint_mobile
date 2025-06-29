@@ -4,8 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:pint/models/utilizador.dart';
 
 class ApiService {
-  //static const String _baseUrl = 'http://localhost:3000/api'; // Substitua pela sua URL
-  static const String _baseUrl = 'http://10.0.2.2:3000/api';
+  static const String _baseUrl = 'https://pint-13nr.onrender.com/api';
 
   String? _token;
 
