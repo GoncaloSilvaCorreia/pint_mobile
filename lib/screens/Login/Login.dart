@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pint/api/api.dart';
+import 'package:pint/utils/auth_provider.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -49,10 +51,13 @@ class _LoginPageState extends State<LoginPage> {
     setState(() => _isLoading = true);
 
     try {
-      final user = await _apiService.login(email, password);
+      final utilizador = await _apiService.login(email, password);
 
-      if (user != null) {
+      if (utilizador != null) {
         if (mounted) {
+          context.read<AuthProvider>().login(utilizador.token, utilizador); 
+          
+          context.go('/'); // ISTO TEM DE ESTAR SENÃO O LOGIN NÃO VAI DAR
           context.go('/TelaPrincipal');
         }
       } else {

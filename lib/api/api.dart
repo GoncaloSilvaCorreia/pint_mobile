@@ -23,8 +23,14 @@ class ApiService {
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
-        _token = data['token']; // Armazena o token
-        return Utilizador.fromJson(data['user']);
+        print('Resposta completa: $data');
+
+        _token = data['token'] as String;
+
+        return Utilizador.fromJson({
+          ...data['user'],  // Espalha os dados do usuário
+          'token': data['token']  // Adiciona o token
+        });
       } else {
         final errorData = jsonDecode(response.body);
         throw Exception(errorData['message'] ?? 'Credenciais inválidas');
@@ -34,8 +40,7 @@ class ApiService {
       throw Exception('Falha na conexão. Tente novamente.');
     }
   }
-
-  // Método para usar em outras requisições
+  
   Future<Map<String, String>> _getAuthHeaders() async {
     return {
       'Content-Type': 'application/json',

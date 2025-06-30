@@ -1,5 +1,8 @@
+//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:pint/utils/auth_provider.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({super.key});
@@ -46,7 +49,11 @@ class SideMenu extends StatelessWidget {
                 leading: const Icon(Icons.exit_to_app, color: Colors.black),
                 title: const Text('Sair'),
                 trailing: const Icon(Icons.arrow_forward),
-                onTap: () => context.go('/login'),
+                onTap: () {
+                  Navigator.of(context).pop(); //serve para fechar o sidemenu
+                  context.read<AuthProvider>().logout(); //faz o método logout do authprovider
+                  context.go('/Login'); //vai para a tela /Login
+                }
               ),
             ),
           ],

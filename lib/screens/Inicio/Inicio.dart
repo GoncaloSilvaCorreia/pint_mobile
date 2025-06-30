@@ -16,7 +16,6 @@ class TelaPrincipal extends StatelessWidget {
         backgroundColor: Colors.grey[300],
         title: Row(
           children: [
-            // Logo Softinsa no AppBar
             RichText(
               text: const TextSpan(
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -33,17 +32,6 @@ class TelaPrincipal extends StatelessWidget {
               onPressed: () {
                 // Ação do ícone de notificações
               },
-            ),
-
-            // Botão para abrir o menu lateral (endDrawer) à direita
-            Builder(
-              builder: (context) => IconButton(
-                icon: const Icon(Icons.menu),
-                onPressed: () {
-                  // Aqui abrimos o menu lateral do lado direito
-                  Scaffold.of(context).openEndDrawer();
-                },
-              ),
             ),
           ],
         ),

@@ -102,6 +102,10 @@ meta
 2.12
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/meta-1.16.0/
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/meta-1.16.0/lib/
+nested
+2.12
+file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/nested-1.0.0/
+file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/nested-1.0.0/lib/
 path
 3.4
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/path-1.9.1/
@@ -110,6 +114,10 @@ plugin_platform_interface
 3.0
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib/
+provider
+2.12
+file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/provider-6.1.5/
+file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/provider-6.1.5/lib/
 source_span
 3.1
 file:///Users/goncalocorreia/.pub-cache/hosted/pub.dev/source_span-1.10.1/

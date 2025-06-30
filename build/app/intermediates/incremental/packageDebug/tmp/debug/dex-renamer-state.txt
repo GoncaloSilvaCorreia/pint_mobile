@@ -1,4 +1,4 @@
-#Sun Jun 29 21:37:47 WEST 2025
+#Tue Jul 01 00:35:43 WEST 2025
 base.0=/Users/goncalocorreia/Documents/GitHub/pint_mobile/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/goncalocorreia/Documents/GitHub/pint_mobile/build/app/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
 base.2=/Users/goncalocorreia/Documents/GitHub/pint_mobile/build/app/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
