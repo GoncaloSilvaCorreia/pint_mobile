@@ -21,5 +21,5 @@ class SoftinsaLoginApp extends StatelessWidget {
       routerConfig: rotas,
       title: 'Softinsa Login',
     );
-  }
+  } 
 }
